@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attarik Mohammad — Portfolio</title>
+    <meta name="description"
+        content="Portfolio pribadi Attarik Mohammad, Fresh Graduate Matematika, Data Analyst & Machine Learning Enthusiast.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ======= NAVBAR ======= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">ATTA<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#tentang" class="nav-link">Tentang</a></li>
+            <li><a href="#skill" class="nav-link">Skill</a></li>
+            <li><a href="#pengalaman" class="nav-link">Pengalaman</a></li>
+            <li><a href="#proyek" class="nav-link">Proyek</a></li>
+            <li><a href="CV_Attarik_Mohammad.pdf" download class="nav-link">CV</a></li>
+            <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+        <a href="CV_Attarik_Mohammad.pdf" download class="btn-nav">Unduh CV</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#pengalaman">Pengalaman</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="CV_Attarik_Mohammad.pdf" download>Unduh CV</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </div>
+
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="beranda">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Open to Work
+            </div>
+            <h1 class="hero-title">
+                Hi, Saya <span class="gradient-text">Attarik</span><br>Mohammad<span class="cursor-blink">_</span>
+            </h1>
+            <p class="hero-subtitle">
+                Fresh Graduate <strong>Matematika</strong> · <strong>Data Analyst</strong> · <strong>Machine Learning
+                    Enthusiast</strong>
+            </p>
+            <p class="hero-desc">
+                Membangun solusi berbasis data dengan fondasi matematika yang kuat. Bergairah dalam mengubah angka
+                menjadi wawasan (insight) yang bermakna.
+            </p>
+            <div class="hero-cta">
+                <a href="CV_Attarik_Mohammad.pdf" download class="btn-primary" id="btn-cv">
+                    <i class="fa-solid fa-file-arrow-down"></i> Unduh CV Saya
+                </a>
+                <a href="#kontak" class="btn-secondary">
+                    <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-target="2">0</span>
+                    <span class="stat-label">Tahun Aktif<br>Berorganisasi</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="2">0</span>
+                    <span class="stat-label">Posisi<br>Kepemimpinan</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="3">0</span>
+                    <span class="stat-label">Bidang<br>Kompetensi</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-container">
+                <div class="avatar-ring ring-1"></div>
+                <div class="avatar-ring ring-2"></div>
+                <div class="avatar-ring ring-3"></div>
+                <img src="atta.png" alt="Attarik Mohammad" class="avatar-img" id="avatar-img">
+                <div class="avatar-badge ab-1"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="avatar-badge ab-2"><i class="fa-solid fa-brain"></i></div>
+                <div class="avatar-badge ab-3"><i class="fa-solid fa-square-root-variable"></i></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ======= TENTANG ======= -->
+    <section id="tentang" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tentang Saya</span>
+                <h2 class="section-title">Siapa <span class="gradient-text">Atta?</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Saya adalah seorang <strong>fresh graduate dari program studi Matematika</strong>, dengan fokus
+                        yang kuat pada bidang <strong>Data Analyst</strong> dan <strong>Machine Learning</strong>.
+                        Selama masa perkuliahan, saya tidak hanya mendalami teori matematika murni, tetapi juga aktif
+                        menerapkannya dalam konteks analisis data modern.
+                    </p>
+                    <p>
+                        Semangat saya adalah membangun jembatan antara <strong>matematika formal</strong> dan
+                        <strong>solusi dunia nyata</strong> — menggunakan model prediktif, visualisasi data, dan
+                        algoritma machine learning untuk menghasilkan keputusan yang lebih cerdas berbasis data.
+                    </p>
+                    <p>
+                        Di luar akademis, saya aktif berorganisasi di <strong>HIMATIKA</strong> (Himpunan Mahasiswa
+                        Matematika), di mana saya mengasah kemampuan kepemimpinan, manajemen tim, dan pengembangan
+                        sumber daya manusia.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <strong>S1 Matematika</strong>
+                                <span>Fresh Graduate</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-database"></i>
+                            <div>
+                                <strong>Data Analyst</strong>
+                                <span>Fokus Utama</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-robot"></i>
+                            <div>
+                                <strong>Machine Learning</strong>
+                                <span>Bidang Spesialisasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card-stack">
+                    <div class="info-card card-glow">
+                        <div class="info-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <span class="info-label">Lokasi</span>
+                            <span class="info-value">Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="info-card card-glow">
+                        <div class="info-card-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <div>
+                            <span class="info-label">Status</span>
+                            <span class="info-value available">Tersedia untuk Bekerja</span>
+                        </div>
+                    </div>
+                    <div class="info-card card-glow">
+                        <div class="info-card-icon"><i class="fa-solid fa-language"></i></div>
+                        <div>
+                            <span class="info-label">Bahasa</span>
+                            <span class="info-value">Indonesia, Inggris</span>
+                        </div>
+                    </div>
+                    <div class="info-card card-glow">
+                        <div class="info-card-icon"><i class="fa-solid fa-users"></i></div>
+                        <div>
+                            <span class="info-label">Organisasi</span>
+                            <span class="info-value">HIMATIKA (2024–2025)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= SKILL ======= -->
+    <section id="skill" class="section skill-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kompetensi</span>
+                <h2 class="section-title">Skill & <span class="gradient-text">Keahlian</span></h2>
+            </div>
+            <div class="skill-grid">
+                <div class="skill-category card-glow animate-on-scroll">
+                    <div class="skill-cat-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <i class="fa-solid fa-square-root-variable"></i>
+                    </div>
+                    <h3>Matematika</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Kalkulus</span>
+                        <span class="tag">Aljabar Linear</span>
+                        <span class="tag">Statistika</span>
+                        <span class="tag">Probabilitas</span>
+                        <span class="tag">Matematika Diskrit</span>
+                        <span class="tag">Optimisasi</span>
+                    </div>
+                </div>
+                <div class="skill-category card-glow animate-on-scroll">
+                    <div class="skill-cat-icon" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+                        <i class="fa-solid fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">R</span>
+                        <span class="tag">Data Visualization</span>
+                    </div>
+                </div>
+                <div class="skill-category card-glow animate-on-scroll">
+                    <div class="skill-cat-icon" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Regression</span>
+                        <span class="tag">Classification</span>
+                        <span class="tag">Clustering</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+                <div class="skill-category card-glow animate-on-scroll">
+                    <div class="skill-cat-icon" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+                        <i class="fa-solid fa-tools"></i>
+                    </div>
+                    <h3>Tools & Lainnya</h3>
+                    <div class="skill-tags">
+                        <span class="tag">GitHub</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Google Colab</span>
+                        <span class="tag">R</span>
+                        <span class="tag">SPSS</span>
+                        <span class="tag">Microsoft Office</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Bars -->
+            <div class="skill-bars-container animate-on-scroll">
+                <h3 class="skill-bars-title">Tingkat Kefasihan</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>Python</span><span>85%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85"
+                                style="background: linear-gradient(90deg,#667eea,#764ba2)"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>Matematika & Statistika</span><span>90%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90"
+                                style="background: linear-gradient(90deg,#11998e,#38ef7d)"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>Machine Learning</span><span>80%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="80"
+                                style="background: linear-gradient(90deg,#f093fb,#f5576c)"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>Data Visualization</span><span>80%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="80"
+                                style="background: linear-gradient(90deg,#f7971e,#ffd200)"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>SQL</span><span>75%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="75"
+                                style="background: linear-gradient(90deg,#4facfe,#00f2fe)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= PENGALAMAN ======= -->
+    <section id="pengalaman" class="section exp-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Riwayat</span>
+                <h2 class="section-title">Pengalaman <span class="gradient-text">Saya</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- Pengalaman Kerja -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot dot-glow"
+                        style="background: linear-gradient(135deg,#f7971e,#ffd200); box-shadow: 0 0 20px rgba(247,151,30,0.5);">
+                    </div>
+                    <div class="timeline-year" style="color:#f7971e;">2021 &mdash; Sekarang</div>
+                    <div class="timeline-content card-glow">
+                        <div class="timeline-header">
+                            <div class="timeline-org-badge"
+                                style="background: linear-gradient(135deg,rgba(247,151,30,0.15),rgba(255,210,0,0.1)); border-color: rgba(247,151,30,0.4); color:#f7971e;">
+                                <i class="fa-solid fa-chalkboard-user"></i> Pengalaman Kerja
+                            </div>
+                        </div>
+                        <h3>Guru Private Matematika</h3>
+                        <p class="timeline-division">Mengajar Privat · Mandiri</p>
+                        <p class="timeline-desc">
+                            Aktif sebagai <strong>guru private Matematika</strong> sejak tahun 2021 hingga sekarang.
+                            Memberikan bimbingan belajar Matematika secara personal kepada siswa dari berbagai jenjang
+                            pendidikan, mulai dari SD hingga SMA. Membantu siswa memahami konsep-konsep dasar hingga
+                            materi lanjutan dengan metode yang disesuaikan dengan kebutuhan masing-masing siswa.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Pengajaran</span>
+                            <span>Matematika</span>
+                            <span>Komunikasi</span>
+                            <span>Adaptasi Metode Belajar</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pengalaman Organisasi -->
+                <!-- Tentor PSDS 9.0 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot dot-glow"
+                        style="background: linear-gradient(135deg,#4facfe,#00f2fe); box-shadow: 0 0 20px rgba(79,172,254,0.5);">
+                    </div>
+                    <div class="timeline-year" style="color:#4facfe;">2025</div>
+                    <div class="timeline-content card-glow">
+                        <div class="timeline-header">
+                            <div class="timeline-org-badge"
+                                style="background: linear-gradient(135deg,rgba(79,172,254,0.15),rgba(0,242,254,0.1)); border-color: rgba(79,172,254,0.4); color:#4facfe;">
+                                <i class="fa-brands fa-github"></i> Pengalaman Mengajar
+                            </div>
+                        </div>
+                        <h3>Tentor PSDS 9.0</h3>
+                        <p class="timeline-division">Pusat Studi Data Science · 2025</p>
+                        <p class="timeline-desc">
+                            Berperan sebagai <strong>tentor</strong> pada program <strong>PSDS 9.0</strong> (Pusat
+                            Studi Data Science), menyampaikan materi <strong>Machine Learning</strong> menggunakan
+                            metode <strong>CNN (Convolutional Neural Network)</strong>
+                            kepada peserta program. Seluruh materi pembelajaran yang digunakan tersedia secara publik di
+                            GitHub.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Data Science</span>
+                            <span>Statistika</span>
+                            <span>Pengajaran</span>
+                            <span>GitHub</span>
+                        </div>
+                        <a href="https://github.com/attarikmohammad/PSDS-MAHIR-CNN-" target="_blank"
+                            class="timeline-github-link">
+                            <i class="fa-brands fa-github"></i> Lihat Materi di GitHub
+                        </a>
+                    </div>
+                </div>
+                <!-- HIMATIKA 2025 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot dot-glow"></div>
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content card-glow">
+                        <div class="timeline-header">
+                            <div class="timeline-org-badge">
+                                <i class="fa-solid fa-users"></i> HIMATIKA
+                            </div>
+                        </div>
+                        <h3>Staff</h3>
+                        <p class="timeline-division">Divisi Pengembangan Bakat dan Sumber Daya Mahasiswa (PBSDM)</p>
+                        <p class="timeline-desc">
+                            Berperan sebagai anggota aktif di <strong>divisi PBSDM</strong>, mendukung pelaksanaan
+                            program pelatihan dan
+                            pengembangan potensi mahasiswa Matematika di lingkungan kampus. Berkontribusi dalam
+                            merancang dan menjalankan berbagai kegiatan yang mendorong kompetensi akademik dan
+                            non-akademik mahasiswa.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Koordinasi Tim</span>
+                            <span>Manajemen Program</span>
+                            <span>Pengembangan SDM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot dot-glow dot-secondary"></div>
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content card-glow">
+                        <div class="timeline-header">
+                            <div class="timeline-org-badge badge-secondary">
+                                <i class="fa-solid fa-users"></i> HIMATIKA
+                            </div>
+                        </div>
+                        <h3>Sekretaris Divisi</h3>
+                        <p class="timeline-division">Divisi Pengembangan Bakat dan Sumber Daya Mahasiswa (PBSDM)</p>
+                        <p class="timeline-desc">
+                            Dipercaya menjabat sebagai <strong>Sekretaris Divisi PBSDM</strong> — bertanggung jawab atas
+                            pengelolaan administrasi divisi, penyusunan laporan kegiatan, notulensi rapat, dan
+                            koordinasi komunikasi internal. Berkontribusi dalam pengambilan keputusan strategis divisi
+                            untuk mendorong pengembangan mahasiswa.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Administrasi</span>
+                            <span>Kepemimpinan</span>
+                            <span>Komunikasi</span>
+                            <span>Perencanaan Strategis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= RECENT PROJECT ======= -->
+    <section id="proyek" class="section project-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portofolio</span>
+                <h2 class="section-title">Recent <span class="gradient-text">Project</span></h2>
+                <p class="section-desc">Proyek terbaru yang saya kerjakan — dari riset akademis hingga implementasi
+                    Machine Learning.</p>
+            </div>
+
+            <!-- Project Card -->
+            <div class="project-card card-glow animate-on-scroll" id="project-paper-all">
+                <div class="project-card-inner">
+                    <!-- Left: Info -->
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-badge badge-research">
+                                <i class="fa-solid fa-flask"></i> Paper Penelitian
+                            </span>
+                            <span class="project-badge badge-published">
+                                <i class="fa-solid fa-check-circle"></i> Published · RESTI Journal
+                            </span>
+                        </div>
+                        <h3 class="project-title">Evaluation of CNN Optimizer Combinations for ALL Classification</h3>
+                        <p class="project-desc">
+                            Studi komparatif sistematis yang mengevaluasi <strong>4 algoritma optimasi</strong> (Adam,
+                            AdamW, NAdam, RMSprop) pada
+                            <strong>6 arsitektur CNN</strong> (EfficientNet, ResNet50V2, Xception) untuk klasifikasi
+                            <strong>Acute Lymphoblastic Leukemia (ALL)</strong> dari citra apusan darah tepi.
+                        </p>
+
+                        <!-- Key Finding Highlight -->
+                        <div class="project-highlight">
+                            <div class="highlight-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <div>
+                                <span class="highlight-label">Hasil Terbaik</span>
+                                <span class="highlight-value">Xception + RMSprop → <strong>99.69%
+                                        Accuracy</strong></span>
+                            </div>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="project-stack">
+                            <span class="project-tag"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="project-tag"><i class="fa-solid fa-brain"></i> PyTorch</span>
+                            <span class="project-tag">CNN</span>
+                            <span class="project-tag">Transfer Learning</span>
+                            <span class="project-tag">EfficientNet</span>
+                            <span class="project-tag">Xception</span>
+                            <span class="project-tag">Google Colab</span>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="project-actions">
+                            <a href="https://attarikmohammad.github.io/PaperBidangKesehatan/" target="_blank"
+                                class="btn-project-primary" id="btn-lihat-paper">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Paper
+                            </a>
+                            <a href="https://github.com/attarikmohammad" target="_blank" class="btn-project-secondary">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Stats Panel -->
+                    <div class="project-stats-panel">
+                        <div class="project-stats-header">
+                            <i class="fa-solid fa-chart-bar"></i>
+                            <span>Ringkasan Eksperimen</span>
+                        </div>
+                        <div class="project-stats-grid">
+                            <div class="p-stat">
+                                <span class="p-stat-num">6</span>
+                                <span class="p-stat-label">Arsitektur CNN</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-num">4</span>
+                                <span class="p-stat-label">Optimizer</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-num">24</span>
+                                <span class="p-stat-label">Kombinasi Uji</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-num">99.69%</span>
+                                <span class="p-stat-label">Top Accuracy</span>
+                            </div>
+                        </div>
+
+                        <!-- Architecture Result Mini-Chart -->
+                        <div class="project-results">
+                            <p class="p-results-title">Top Accuracy per Arsitektur</p>
+                            <div class="p-result-bar">
+                                <span class="p-result-arch">Xception</span>
+                                <div class="p-result-track">
+                                    <div class="p-result-fill" data-width="99.69"
+                                        style="background:linear-gradient(90deg,#667eea,#764ba2)"></div>
+                                </div>
+                                <span class="p-result-score">99.69%</span>
+                            </div>
+                            <div class="p-result-bar">
+                                <span class="p-result-arch">EffNetV2-M</span>
+                                <div class="p-result-track">
+                                    <div class="p-result-fill" data-width="99.1"
+                                        style="background:linear-gradient(90deg,#11998e,#38ef7d)"></div>
+                                </div>
+                                <span class="p-result-score">~99%</span>
+                            </div>
+                            <div class="p-result-bar">
+                                <span class="p-result-arch">EffNetV2-S</span>
+                                <div class="p-result-track">
+                                    <div class="p-result-fill" data-width="98.5"
+                                        style="background:linear-gradient(90deg,#f093fb,#f5576c)"></div>
+                                </div>
+                                <span class="p-result-score">~98%</span>
+                            </div>
+                            <div class="p-result-bar">
+                                <span class="p-result-arch">ResNet50V2</span>
+                                <div class="p-result-track">
+                                    <div class="p-result-fill" data-width="93.85"
+                                        style="background:linear-gradient(90deg,#f7971e,#ffd200)"></div>
+                                </div>
+                                <span class="p-result-score">93.85%</span>
+                            </div>
+                        </div>
+
+                        <div class="project-affiliation">
+                            <i class="fa-solid fa-university"></i>
+                            <span>Universitas Ahmad Dahlan, Yogyakarta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= UNDUH CV ======= -->
+    <section id="cv" class="section cv-download-section">
+        <div class="container">
+            <div class="cv-download-card card-glow animate-on-scroll">
+                <div class="cv-download-icon">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                </div>
+                <div class="cv-download-info">
+                    <h2>Curriculum Vitae</h2>
+                    <p>Unduh CV saya untuk melihat pengalaman, keahlian, dan pencapaian secara lengkap dalam format PDF.</p>
+                    <div class="cv-download-meta">
+                        <span><i class="fa-solid fa-user"></i> Attarik Mohammad</span>
+                        <span><i class="fa-solid fa-briefcase"></i> Data Analyst · Machine Learning</span>
+                        <span><i class="fa-solid fa-file-pdf"></i> Format PDF</span>
+                    </div>
+                </div>
+                <a href="CV_Attarik_Mohammad.pdf" download class="btn-cv-download" id="btn-download-cv">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Unduh CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= KONTAK ======= -->
+    <section id="kontak" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hubungi Saya</span>
+                <h2 class="section-title">Mari <span class="gradient-text">Terhubung!</span></h2>
+                <p class="section-desc">Tertarik untuk berkolaborasi atau memiliki peluang kerja? Jangan ragu untuk
+                    menghubungi saya!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card card-glow animate-on-scroll">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>attarikamohammad@gmail.com</p>
+                    <a href="mailto:attarikamohammad@gmail.com" class="contact-link">Kirim Email <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="contact-card card-glow animate-on-scroll">
+                    <div class="contact-icon" style="background: linear-gradient(135deg,#0077B5,#00a0dc);"><i
+                            class="fa-brands fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/attarikmohammad</p>
+                    <a href="https://www.linkedin.com/in/attarikmohammad/" target="_blank" class="contact-link">Lihat
+                        Profil
+                        <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="contact-card card-glow animate-on-scroll">
+                    <div class="contact-icon" style="background: linear-gradient(135deg,#333,#555);"><i
+                            class="fa-brands fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>github.com/attarikmohammad</p>
+                    <a href="https://github.com/attarikmohammad" target="_blank" class="contact-link">Lihat Repositori
+                        <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">ATTA<span class="dot">.</span></div>
+            <p>© 2026 Attarik Mohammad · Dibuat dengan <span style="color:#f5576c">♥</span> dan semangat belajar</p>
+            <div class="footer-links">
+                <a href="#beranda">Beranda</a>
+                <a href="#tentang">Tentang</a>
+                <a href="CV_Attarik_Mohammad.pdf" download>Unduh CV</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
